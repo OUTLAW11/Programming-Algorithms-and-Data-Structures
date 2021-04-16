@@ -15,7 +15,7 @@ public class Week3 {
         }
     }
 
-    Queue<String> convertInfixToRPN(String[] infixNotation) {
+    Queue<String> main2(String[] infixNotation) {
         Map<String, Integer> prededence = new HashMap<>();
         prededence.put("/", 5);
         prededence.put("*", 5);
@@ -65,10 +65,10 @@ public class Week3 {
 
     public static void main(String[] args) {
         String[] infixNotation = {"33", "+", "23"};
-        System.out.println(new ConvertInfixToRPN().convertInfixToRPN(infixNotation));
+        System.out.println(new Week3().main2(infixNotation));
 
         String[] infixNotation2 = {"2", "*", "(", "3", "+", "4", "/", "2", ")"};
-        System.out.println(new ConvertInfixToRPN().convertInfixToRPN(infixNotation2));
+        System.out.println(new Week3().main2(infixNotation2));
 
     }
 
